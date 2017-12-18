@@ -4,6 +4,7 @@
     "start": "node bin/ip-updater"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "dotenv": "^4.0.0",
     "vogger": "^1.1.1"
   }

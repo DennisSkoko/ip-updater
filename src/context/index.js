@@ -2,7 +2,9 @@
 
 const modules = [
   { name: 'settings', path: '../../conf/settings.js' },
-  { name: 'logger', path: './logger' }
+  { name: 'logger', path: './logger' },
+  { name: 'http', path: './http' },
+  { name: 'ip', path: './ip' }
 ]
 
 module.exports = () => {

@@ -8,7 +8,7 @@ require('dotenv').config({
 
 module.exports = () => ({
   app: {
-    interval: 5000 //1000 * 60 * 60 * 24
+    interval: 1000 * 60 * 60 * 24
   },
 
   logger: {

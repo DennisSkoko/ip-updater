@@ -8,7 +8,7 @@ require('dotenv').config({
 
 module.exports = () => ({
   app: {
-    interval: 1000 * 60 * 60 * 24
+    interval: 5000 //1000 * 60 * 60 * 24
   },
 
   logger: {
@@ -19,5 +19,11 @@ module.exports = () => ({
 
   ip: {
     url: 'https://ipapi.co/ip'
+  },
+
+  gists: {
+    url: 'https://api.github.com/gists/' + (process.env.GIST_ID || 'invalid'),
+    token: process.env.GITHUB_TOKEN || 'invalid',
+    filename: 'ip.txt'
   }
 })

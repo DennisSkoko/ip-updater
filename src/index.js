@@ -8,6 +8,10 @@ module.exports = () => {
   const loop = () => push()
     .then(ip => {
       ctx.logger.info('Pushed the IP to the gist', { ip })
+      return ip
+    })
+    .then(ip => {
+      return ctx.gists.update(ip)
     })
     .catch(err => ctx.logger.error(err))
     .then(() => {

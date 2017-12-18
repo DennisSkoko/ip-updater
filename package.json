@@ -1,0 +1,10 @@
+{
+  "author": "Dennis Skoko <dennis.skoko@hotmail.com> (http://dennisskoko.se)",
+  "scripts": {
+    "start": "node bin/ip-updater"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "vogger": "^1.1.1"
+  }
+}
